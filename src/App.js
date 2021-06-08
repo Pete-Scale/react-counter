@@ -11,11 +11,15 @@ function App() {
 
   const [count, setCount] = useState(() => 0)
 
+  function subtract() {
+    setCount(prevCount => prevCount - 1)
+  }
+
   return (
     <>
       <Title />
       <CountView countState={count} />
-      <DecrementBtn />
+      <DecrementBtn onClick={subtract}/>
       <IncrementBtn />
       <ResetBtn />
     </>
