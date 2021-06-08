@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Counter from './components/counter/counter'
 
 // import Components
 import Title from './components/Title/Title'
@@ -12,10 +11,6 @@ function App() {
 
   const [count, setCount] = useState(() => 0)
 
-  function subtract() {
-    setCount(prevCount => prevCount - 1)
-  }
-
   return (
     <>
       <Title />
@@ -24,8 +19,6 @@ function App() {
       <IncrementBtn />
       <ResetBtn />
     </>
-
-    // <Counter />
   );
 }
 
